@@ -1,0 +1,36 @@
+
+<!-- saved from url=(0067)file:///C:/Users/User/Mobile%20Partner/Downloads/app.component.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>My first application <hr>
+{{ name }}
+{{5*2}}
+<!--interpolation-->
+<img src="file:///C:/Users/User/Mobile%20Partner/Downloads/%7B%7Bimage%7D%7D">
+
+<img [src]="image">
+
+<hr>
+<button (click)="clickme()"> ok</button>
+
+<input [(ngmodel)]="name">
+{{name}}
+
+<ol> 
+<li *ngfor="let i of number">
+    {{i}} </li>
+
+</ol>
+
+<hr>
+<ul [ngswitch]="superhero">
+    <li *ngswitchcase="&#39;Groot&#39;">Groot</li>
+    <li *ngswitchcase="&#39;Ironman&#39;">Ironman</li>
+    <li *ngswitchcase="&#39;Hulk&#39;"> am Hulk! how are u</li>
+    <li *ngswitchcase="&#39;Thor&#39;">Thor</li>
+    <li *ngswitchcase="&#39;Spiderman&#39;">am Spiderman</li>
+    <li *ngswitchdefault="">Batman</li>
+  </ul>
+        
+     
+
+
+</body></html>
